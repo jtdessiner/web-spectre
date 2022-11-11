@@ -67,7 +67,7 @@ div.s-circle.uno {
     justify-content: center;
     align-items: center;
     position: absolute;
-    overflow: hidden;
+    
 }
 p, h1.posicion {
     position: relative;
@@ -78,4 +78,10 @@ section.navbar-section.reloj {
     justify-content: center;
     align-items: center;
     color: #5755d9
+
+}
+
+#reloj {
+    margin: auto;
+    font-weight:300;
 }
