@@ -10,8 +10,12 @@
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
     <link href="style.css" rel="stylesheet">
     <title>Spectre</title>
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    
 </head>
 <body>
+  <script src="sketch.js"></script>
     <div class="container altura"> <!--Menu navegación superior-->
         <header class="navbar">
             <section class="navbar-section reloj"><p id="reloj"></p>
@@ -25,7 +29,7 @@
           </header>
     </div><!--Menu navegación superior-->
     
-   
+    <div id="sketch-container"></div>
     <!--Hero con fondo imagen-->
     <div class="hero posicion" style="background-image: url('img/home.jpg'); background-repeat: no-repeat; background-size: cover;">
             <div class="hero-body">
@@ -35,7 +39,7 @@
                 </div>
             </div>
     </div> <!--Hero con fondo imagen-->
-     
+  
     <div class="container">
       <!--Menu lateral-->
         <div class="off-canvas ">
@@ -67,6 +71,7 @@
             </div>
           </div><!--Menu lateral-->
     </div>
+   
     <div class="container-cont">
         <div class="columns">
             
@@ -89,7 +94,9 @@
         </div>
       </div>
       
+      
     
 <script src="script.js"></script>
+
 </body>
 </html>

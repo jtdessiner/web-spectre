@@ -85,3 +85,7 @@ section.navbar-section.reloj {
     margin: auto;
     font-weight:300;
 }
+canvas {
+    display: block;
+  }
+  
