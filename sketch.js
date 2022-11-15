@@ -15,7 +15,7 @@ class Particle {
   // creation of a particle.
     createParticle() {
       noStroke();
-      fill('rgba(200,169,169,0.5)');
+      fill('rgba(85,87,217,0.5)');
       circle(this.x,this.y,this.r);
     }
   
@@ -35,7 +35,7 @@ class Particle {
       particles.forEach(element =>{
         let dis = dist(this.x,this.y,element.x,element.y);
         if(dis<85) {
-          stroke('rgba(255,255,255,0.04)');
+          stroke('rgba(0,0,0,0.1)');
           line(this.x,this.y,element.x,element.y);
         }
       });
@@ -45,8 +45,11 @@ class Particle {
   // an array to add multiple particles
   let particles = [];
   
+  function windowResized(){
+    resizeCanvas(windowWidth, 400);
+  }
   function setup() {
-    let canvas = createCanvas(2000, 400);
+    let canvas = createCanvas(windowWidth, 400);
     canvas.parent('sketch-container');
     for(let i = 0;i<width/10;i++){
       particles.push(new Particle());
@@ -54,7 +57,7 @@ class Particle {
   }
   
   function draw() {
-    background(87, 85, 217);
+    background(255);
     for(let i = 0;i<particles.length;i++) {
       particles[i].createParticle();
       particles[i].moveParticle();
