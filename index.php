@@ -1,6 +1,4 @@
-
-
-    
+ 
 <?php get_header(); ?>
   
     <div class="container">
@@ -15,7 +13,7 @@
               <!-- off-screen sidebar -->
               <ul>
                 <li class="menu-item">
-                  <a href="#">My profile</a>
+                  <a href="semana1.php">My profile</a>
                   <div class="menu-badge">
                     <label class="form-checkbox">
                       <input type="checkbox">
